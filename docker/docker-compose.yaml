@@ -427,6 +427,8 @@ services:
     profiles:
       - postgresql
     restart: always
+    ports:
+      - "11544:5432"
     environment:
       POSTGRES_USER: ${DB_USERNAME:-postgres}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-difyai123456}
