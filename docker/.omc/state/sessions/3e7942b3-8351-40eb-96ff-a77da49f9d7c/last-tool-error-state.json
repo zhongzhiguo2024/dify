@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"docker exec docker-web-1 wget -q -O- -S --post-data='{\\\"token\\\":\\\"test\\\"}' --header=\\\"Content-Type: application/json\\\" --header=\\\"X-Portal-API-Key: portal-dev-key-change-in-production\\\" ht...",
+  "error": "Exit code 1\n  HTTP/1.1 401 UNAUTHORIZED\nwget: server returned error: HTTP/1.1 401 UNAUTHORIZED",
+  "timestamp": "2026-07-22T15:23:30.676Z",
+  "retry_count": 3
+}

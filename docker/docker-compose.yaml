@@ -229,6 +229,7 @@ services:
     image: langgenius/dify-api:1.16.0
     environment:
       MODE: api
+      PORTAL_API_KEY: ${PORTAL_API_KEY:-}
       SENTRY_DSN: ${API_SENTRY_DSN:-}
       SENTRY_TRACES_SAMPLE_RATE: ${API_SENTRY_TRACES_SAMPLE_RATE:-1.0}
       SENTRY_PROFILES_SAMPLE_RATE: ${API_SENTRY_PROFILES_SAMPLE_RATE:-1.0}

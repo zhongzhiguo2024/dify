@@ -45,6 +45,8 @@ from . import (
     version,
     workflow_run_archive,
 )
+from .portal import accounts as portal_accounts  # Portal integration endpoint (noqa: F401)
+from .portal import jwt_login as portal_jwt_login  # Portal JWT console login (noqa: F401)
 from .agent import composer as agent_composer
 from .agent import roster as agent_roster
 
