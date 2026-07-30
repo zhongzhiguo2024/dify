@@ -265,3 +265,29 @@ web/.vitest-reports/
 # dify-agent-runtime
 dify-agent-runtime/bin/
 dify-agent-runtime/.integration-state
+
+# ─────────────────────────────────────────────
+# agent-platform custom deployment (deps/dify)
+# 自定义部署配置目录 — 只保留配置模板，排除运行时数据与自动生成文件
+# ─────────────────────────────────────────────
+
+# volumes — 运行时数据目录（数据量 170MB+，不提交）
+docker-agent-platform/volumes/
+
+# nginx — 自动生成的代理配置（由模板生成）
+docker-agent-platform/nginx/conf.d/default.conf
+
+# .omc — AI 协作工具本地临时状态（全局 + 部署目录）
+.omc/
+docker-agent-platform/.omc/
+docker/.omc/
+
+# .env — 部署时从 .env.example 复制
+docker-agent-platform/.env
+
+# envs/middleware.env — 运行时从 middleware.env.example 复制
+docker-agent-platform/envs/middleware.env
+docker-agent-platform/envs/security.env
+
+# certbot — SSL 证书运行时数据
+docker-agent-platform/certbot/
